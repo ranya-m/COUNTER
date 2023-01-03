@@ -34,8 +34,6 @@ class Counter extends Component {
         render() {
             return (
               <>
-                {/* {(this.state.count) >= 10 ? <div id="backgroundTemp" style={{background: 'linear-gradient(to right, #e52d27, #b31217)'}}/> : (this.state.count) <= -10 ? <div style={{background: 'linear-gradient(to right, #2193b0, #6dd5ed)'}}/> : <div style={{background: 'linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)'}}/>} */}
-
                 <div id="bodyCover"
                     style={{
                         background:
