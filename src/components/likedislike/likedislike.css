@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#bodyCover {
+    /* background-color:gainsboro; */
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* *********** MODES ************* */
+.switchTheme {
+    width: 100vw;
+}
+
+.light {
+    background-color:lavenderblush;
+}
+
+.dark {
+    background-color:rgb(12, 12, 12);
+    color: white !important;
+}
+
+.light .switchTheme {
+    background-color: rgb(198, 74, 95);
+}
+
+.dark .switchTheme {
+    background-color: rgb(122, 50, 62);
+}
+
+.switchTheme label {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.light .switchTheme label {
+   color:rgb(0, 0, 0);
+}
+
+.dark .switchTheme label {
+    color: white;
+}
+
+.dark #dislikesnb  {
+    color: white;
+}
+
+/* ******************************** */
+
+#photo {
+    height: 300px;
+    width: 350px;
+    margin: 45px 5px 10px 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#photo img {
+    width: 100%;
+}
+
+button {
+    padding: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#buttons,
+#numbers {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#likesnb {
+    color: rgb(198, 74, 95);
+}
+
+#likebtn {
+    color: rgb(198, 74, 95);
+    border: none;
+}
+
+#dislikesnb {
+    color:rgb(0, 0, 0);
+}
+
+#dislikebtn {
+    border: none;
+}
+
+
+
+@media screen and (max-width: 457px) {
+    #photoBox {
+        width: 100vw;
+    }
+    
+    /* .dark,
+    .light {
+        height: max-content;
+        width: max-content; 
+    } */
+
+    .switchTheme {
+        width: 100vw;
+    }
+}
