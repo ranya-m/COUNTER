@@ -32,10 +32,13 @@ function WrapperApp() {
     
             <div id="wrapper" className={theme}>
                 <div className="switchTheme">
-                  <label>{theme === "light" ? "Light Mode" : "Dark Mode"}</label>
                   <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
+                  <label>{theme === "light" ? "Light Mode" : "Dark Mode"}</label>
+
                 </div>
+
                 <h1>Welcome to the CatHub</h1>
+
                 <PhotoBox src={photo}/>
             </div>
     

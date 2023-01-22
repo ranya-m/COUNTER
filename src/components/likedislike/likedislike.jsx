@@ -3,15 +3,12 @@ import {Component} from "react";
 import "./likedislike.css";
 import * as Unicons from '@iconscout/react-unicons';
 
-
-
 class PhotoBox extends Component {
     constructor(props) {
         super(props);
         this.state = {
             likes: 0,
             dislikes: 0,
-            background: 'gainsboro'
         };
     };
 
@@ -25,32 +22,9 @@ class PhotoBox extends Component {
             this.setState({dislikes: value + 1})
         }
 
-        // handleClickLightMode() {
-            
-        // }
-        
-        // handleClickDarkMode() {
-            
-        // }
-
         render() {
             return (
               <>
-
-                {/* <div id="pageMode">
-                    <Unicons.UilSun 
-                        onClick={() => {
-                        this.LikeOrDislike();
-                        }}  
-                    />
-
-                    <Unicons.UilMoon 
-                        onClick={() => {
-                        this.handleClickDarkMode();
-                        }}  
-                    />
-                </div> */}
-
                 <div id="bodyCover">
 
                     <div id="photoBox">
